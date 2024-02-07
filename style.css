@@ -1,0 +1,112 @@
+:root{
+    --snow: rgb(255,250,250);
+    --black: rgb(0, 0, 0);
+    --dark-grey: rgb(28, 28, 28);
+    --plum: rgb(221,160,221);
+    --azure: rgb(240,255,255);
+    --mint-cream: rgb(245,255,250);
+    --ok-green: rgb(124, 252, 0);
+    --silver: rgb(192,192,192);
+}
+
+body{
+    font-family: 'Dancing_Script';
+    background-color: var(--silver);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+
+.content-add{
+    display: flex;
+    flex-direction: center;
+    flex-wrap: wrap; /* responsividade*/
+    gap: 10px;
+} 
+
+#inputNewTask, 
+#btnNewTask{
+    background-color: snow;
+    color: black;
+    font-size: 1rem;
+    border: none;
+    outline: none; /* Ocorre quando clica  em um botão */
+}
+
+#inputNewTask{
+    height: 40px;
+    width: 290px;
+    border-radius: 15px;
+}
+
+#btnNewTask{
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+    transition: 350ms;
+    border-radius: 50%;
+
+}
+
+#btnNewTask:hover{
+    background-color: grey;
+    color: snow;
+}
+
+#to-do{
+    display: flex; 
+    flex-direction: column;
+    gap: 1.9rem;
+    padding: 10%;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    justify-content: space-around;
+    align-items: left;
+    margin-top: 15px;
+}
+
+#to-do li{
+    list-style-type: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+}
+
+#to-do li:hover{
+    background-color: snow;
+    transition: .7s;
+    border-radius: 10rem;
+    padding-left: 25px;
+}
+
+#btnOk{
+    border: none;  
+    background-color: rgb(5, 217, 5);
+    color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display:block;
+    justify-content:center;  /** Horizontal **/ 
+    align-items:center;      /** Vertical   */
+    cursor: pointer;
+    transition: 350ms;
+    font-size: 1rem; 
+}
+
+#btnOk:hover {
+    background-color: var(--ok-green);
+    padding: .2rem 1.2rem;       /** .cima e baixo .direita e esquerda**/
+    scroll-padding-right: 5rem;
+    padding-right: 15px;
+}
